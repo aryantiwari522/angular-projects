@@ -1,8 +1,8 @@
 .hero-section {
 	display: grid;
-	grid-template-columns: minmax(0, 1.4fr) minmax(280px, 1fr);
+	grid-template-columns: auto 1fr 1fr;
 	gap: 2rem;
-	align-items: center;
+	align-items: start;
 	padding: 3rem 0;
 }
 
@@ -37,6 +37,20 @@
 	display: flex;
 	flex-wrap: wrap;
 	gap: 1rem;
+}
+
+.hero-photo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hero-photo img {
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+	border: 3px solid rgba(125, 102, 255, 0.3);
+	object-fit: cover;
 }
 
 .btn-primary,
