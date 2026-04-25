@@ -1,1 +1,17 @@
-<p>navbar works!</p>
+<nav class="navbar">
+	<div class="brand">
+		<span class="brand-mark">JS</span>
+		<div>
+			<p class="brand-title">Java Spring Boot</p>
+			<p class="brand-subtitle">Angular Developer</p>
+		</div>
+	</div>
+
+	<ul class="nav-links">
+		<li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a></li>
+		<li><a routerLink="/about" routerLinkActive="active">About</a></li>
+		<li><a routerLink="/skills" routerLinkActive="active">Skills</a></li>
+		<li><a routerLink="/projects" routerLinkActive="active">Projects</a></li>
+		<li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
+	</ul>
+</nav>

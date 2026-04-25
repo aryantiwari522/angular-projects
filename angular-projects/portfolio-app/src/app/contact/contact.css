@@ -1,0 +1,56 @@
+.section-panel {
+	padding: 2rem 0;
+}
+
+.section-header {
+	margin-bottom: 1.75rem;
+}
+
+.section-tag {
+	display: inline-flex;
+	padding: 0.55rem 0.8rem;
+	background: rgba(125, 102, 255, 0.15);
+	color: #b3c3ff;
+	border-radius: 999px;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	font-size: 0.82rem;
+}
+
+.contact-grid {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 1.5rem;
+}
+
+.contact-card {
+	padding: 1.5rem;
+	border-radius: 1.4rem;
+	background: rgba(255, 255, 255, 0.05);
+	border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.contact-card h3 {
+	margin: 0 0 0.8rem;
+}
+
+.contact-card p {
+	margin: 0 0 0.75rem;
+	color: rgba(243, 245, 255, 0.82);
+}
+
+.contact-card a {
+	display: inline-block;
+	margin-top: 0.5rem;
+	color: #7d66ff;
+}
+
+.contact-card .btn-primary {
+	margin-top: 1rem;
+}
+
+@media (max-width: 760px) {
+	.contact-grid {
+		grid-template-columns: 1fr;
+	}
+}

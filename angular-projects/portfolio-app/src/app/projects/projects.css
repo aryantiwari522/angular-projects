@@ -1,0 +1,56 @@
+.section-panel {
+	padding: 2rem 0;
+}
+
+.section-header {
+	margin-bottom: 1.75rem;
+}
+
+.section-tag {
+	display: inline-flex;
+	padding: 0.55rem 0.8rem;
+	background: rgba(125, 102, 255, 0.15);
+	color: #b3c3ff;
+	border-radius: 999px;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	font-size: 0.82rem;
+}
+
+.project-grid {
+	display: grid;
+	gap: 1.5rem;
+}
+
+.project-card {
+	padding: 1.5rem;
+	border-radius: 1.4rem;
+	background: rgba(255, 255, 255, 0.05);
+	border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.project-badge {
+	display: inline-flex;
+	padding: 0.45rem 0.8rem;
+	border-radius: 999px;
+	background: rgba(124, 213, 255, 0.12);
+	color: #c8e5ff;
+	font-size: 0.85rem;
+	margin-bottom: 1rem;
+}
+
+.project-card h3 {
+	margin: 0 0 0.75rem;
+	font-size: 1.2rem;
+}
+
+.project-card p {
+	margin: 0 0 0.9rem;
+	color: rgba(243, 245, 255, 0.82);
+}
+
+.project-meta {
+	margin: 0;
+	color: rgba(243, 245, 255, 0.62);
+	font-size: 0.92rem;
+}
