@@ -22,8 +22,9 @@
 
 .about-grid {
 	display: grid;
-	grid-template-columns: 2fr 1fr;
+	grid-template-columns: 1fr;
 	gap: 2rem;
+	margin-bottom: 2rem;
 }
 
 .story p {
@@ -34,26 +35,57 @@
 
 .about-stats {
 	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 	gap: 1rem;
 }
 
-.about-stats div {
+.stat-item {
 	padding: 1.25rem;
 	border-radius: 1.2rem;
 	background: rgba(255, 255, 255, 0.05);
 	border: 1px solid rgba(255, 255, 255, 0.08);
+	cursor: pointer;
+	transition: all 0.3s ease;
 }
 
-.about-stats strong {
+.stat-item:hover {
+	background: rgba(255, 255, 255, 0.08);
+	border-color: rgba(125, 102, 255, 0.3);
+}
+
+.stat-item.expanded {
+	background: rgba(125, 102, 255, 0.1);
+	border-color: rgba(125, 102, 255, 0.5);
+}
+
+.stat-item strong {
 	display: block;
 	margin-bottom: 0.5rem;
 	color: #fff;
 }
 
-.about-stats span {
+.stat-item span {
 	color: rgba(243, 245, 255, 0.75);
 }
 
+.expanded-content {
+	margin-top: 1rem;
+	padding-top: 1rem;
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.expanded-content p {
+	margin: 0 0 0.75rem;
+	color: rgba(243, 245, 255, 0.82);
+	font-size: 0.9rem;
+	line-height: 1.6;
+}
+.experience-date {
+	display: block;
+	color: rgba(243, 245, 255, 0.75);
+	font-size: 0.85rem;
+	margin: 0rem 0 0;
+}
 @media (max-width: 860px) {
 	.about-grid {
 		grid-template-columns: 1fr;

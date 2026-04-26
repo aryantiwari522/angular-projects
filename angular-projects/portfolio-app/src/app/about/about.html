@@ -16,19 +16,35 @@
 				developer workflows through automation and documentation.
 			</p>
 		</div>
+	</div>
 
-		<div class="about-stats">
-			<div>
-				<strong>Experience</strong>
-				<span>3 years</span>
+	<div class="about-stats">
+		<div (click)="toggleExpand('experience')" class="stat-item" [class.expanded]="expanded['experience']">
+			<strong>Experience</strong>
+			<span>3 years</span>
+			<div *ngIf="expanded['experience']" class="expanded-content">
+					<p><strong>Associate Consultant / SDE-3 (Capgemini India Pvt. Ltd.)</strong><br><span class="experience-date">Mar 2025 - Apr 2026</span><br>Senior Developer – Led Spring Boot API design and Angular integration, reviewed team code, and optimized backend performance.</p>
+					<p><strong>Sr. Analyst / SDE-2 (Capgemini India Pvt. Ltd.)</strong><br><span class="experience-date">Apr 2024 - Mar 2025</span><br>Software Developer – Developed RESTful services, collaborated on microservice migration, and improved application reliability.</p>
+					<p><strong>Analyst / SDE-1 (Capgemini India Pvt. Ltd.)</strong><br><span class="experience-date">Jun 2023 - Mar 2024</span><br>Java Developer – Built backend modules, supported database integration, and contributed to Angular UI enhancements.</p>
+					<p><strong>Intern (Capgemini India Pvt. Ltd.)</strong><br><span class="experience-date">Jan 2023 - May 2023</span><br>Developer Intern – Assisted with Spring Boot application development, frontend bug fixes, and project documentation.</p>
 			</div>
-			<div>
-				<strong>Primary Stack</strong>
-				<span>Java, Spring Boot, Angular</span>
+		</div>
+		<div (click)="toggleExpand('stack')" class="stat-item" [class.expanded]="expanded['stack']">
+			<strong>Primary Stack</strong>
+			<span>Java, Spring Boot, Angular</span>
+			<div *ngIf="expanded['stack']" class="expanded-content">
+				<p>Backend: Java 21, Spring Boot, Hibernate, PostgreSQL</p>
+				<p>Frontend: Angular 21, TypeScript, RxJS, Bootstrap</p>
+				<p>Tools: Git, Docker, Jenkins, Postman</p>
 			</div>
-			<div>
-				<strong>Focus Areas</strong>
-				<span>REST APIs, frontend performance, responsive UI</span>
+		</div>
+		<div (click)="toggleExpand('focus')" class="stat-item" [class.expanded]="expanded['focus']">
+			<strong>Focus Areas</strong>
+			<span>REST APIs, frontend performance, responsive UI</span>
+			<div *ngIf="expanded['focus']" class="expanded-content">
+				<p>API Design: RESTful services, security, documentation</p>
+				<p>Performance: Lazy loading, caching, optimization</p>
+				<p>UI/UX: Responsive design, accessibility, user experience</p>
 			</div>
 		</div>
 	</div>

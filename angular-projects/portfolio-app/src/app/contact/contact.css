@@ -35,13 +35,14 @@
 }
 
 .contact-card p {
-	margin: 0 0 0.75rem;
+	margin: 0 0 0rem;
 	color: rgba(243, 245, 255, 0.82);
 }
 
 .contact-card a {
 	display: inline-block;
-	margin-top: 0.5rem;
+	margin-top: 0 rem;
+	margin-bottom: 0.5rem;
 	color: #7d66ff;
 }
 
