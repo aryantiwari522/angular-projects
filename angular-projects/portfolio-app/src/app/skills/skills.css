@@ -1,9 +1,16 @@
 .section-panel {
-	padding: 2rem 0;
+	padding: 2.5rem 0;
 }
 
 .section-header {
-	margin-bottom: 1.75rem;
+	margin-bottom: 2rem;
+}
+
+.section-header h2 {
+	margin: 0.6rem 0 0.6rem;
+	font-size: clamp(1.55rem, 2.2vw, 2.1rem);
+	color: #ffffff;
+	max-width: 760px;
 }
 
 .section-tag {
@@ -17,32 +24,65 @@
 	text-transform: uppercase;
 }
 
+.section-intro {
+	margin: 0;
+	max-width: 700px;
+	color: rgba(243, 245, 255, 0.75);
+	line-height: 1.7;
+}
+
 .skill-grid {
 	display: grid;
 	grid-template-columns: repeat(2, minmax(0, 1fr));
-	gap: 1.5rem;
+	gap: 1.35rem;
 }
 
 .skill-card {
-	padding: 1.4rem;
-	border-radius: 1.25rem;
+	padding: 1.35rem;
+	border-radius: 1.2rem;
 	border: 1px solid rgba(255, 255, 255, 0.08);
-	background: rgba(255, 255, 255, 0.04);
+	background: linear-gradient(135deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.03));
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+	transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.skill-card:hover {
+	transform: translateY(-3px);
+	border-color: rgba(125, 102, 255, 0.45);
+}
+
+.skill-card.featured {
+	background: linear-gradient(135deg, rgba(125, 102, 255, 0.16), rgba(255, 255, 255, 0.04));
+	border-color: rgba(125, 102, 255, 0.35);
 }
 
 .skill-card h3 {
-	margin: 0 0 1rem;
-	font-size: 1.05rem;
+	margin: 0 0 0.9rem;
+	font-size: 1.06rem;
+	color: #ffffff;
 }
 
 .skill-card ul {
 	margin: 0;
-	padding-left: 1.2rem;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: 0.55rem;
 	color: rgba(243, 245, 255, 0.82);
 }
 
 .skill-card li {
-	margin-bottom: 0.75rem;
+	position: relative;
+	padding-left: 1rem;
+	line-height: 1.55;
+}
+
+.skill-card li::before {
+	content: "•";
+	position: absolute;
+	left: 0;
+	color: #7d66ff;
 }
 
 @media (max-width: 760px) {

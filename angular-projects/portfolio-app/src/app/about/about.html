@@ -1,19 +1,20 @@
 <section class="section-panel">
 	<header class="section-header">
 		<p class="section-tag">About</p>
-		<h2>Professional Java Spring Boot & Angular Developer</h2>
+		<h2>Backend-focused Java Engineer building scalable product systems</h2>
 	</header>
 
 	<div class="about-grid">
 		<div class="story">
 			<p>
-				I am a dedicated developer with 3 years of experience designing and building backend services
-				in Spring Boot and frontend applications in Angular. My work focuses on clean architecture,
-				API design, strong testing, and reusable user interfaces.
+				I am a backend-focused software engineer with 3 years of experience designing and delivering
+				scalable Java and Spring Boot solutions for real-world products. My strongest expertise lies in
+				building robust APIs, service architecture, authentication, and high-performance backend systems.
 			</p>
 			<p>
-				I collaborate closely with product owners, craft maintainable code, and continuously improve
-				developer workflows through automation and documentation.
+				I also work comfortably with Angular for product interfaces, but my core strength is creating
+				secure, maintainable, and production-ready backend platforms that support business growth and
+				excellent user experience.
 			</p>
 		</div>
 	</div>
@@ -23,28 +24,30 @@
 			<strong>Experience</strong>
 			<span>3 years</span>
 			<div *ngIf="expanded['experience']" class="expanded-content">
-					<p><strong>Associate Consultant / SDE-3 (Capgemini India Pvt. Ltd.)</strong><br><span class="experience-date">Mar 2025 - Apr 2026</span><br>Senior Developer – Led Spring Boot API design and Angular integration, reviewed team code, and optimized backend performance.</p>
-					<p><strong>Sr. Analyst / SDE-2 (Capgemini India Pvt. Ltd.)</strong><br><span class="experience-date">Apr 2024 - Mar 2025</span><br>Software Developer – Developed RESTful services, collaborated on microservice migration, and improved application reliability.</p>
-					<p><strong>Analyst / SDE-1 (Capgemini India Pvt. Ltd.)</strong><br><span class="experience-date">Jun 2023 - Mar 2024</span><br>Java Developer – Built backend modules, supported database integration, and contributed to Angular UI enhancements.</p>
-					<p><strong>Intern (Capgemini India Pvt. Ltd.)</strong><br><span class="experience-date">Jan 2023 - May 2023</span><br>Developer Intern – Assisted with Spring Boot application development, frontend bug fixes, and project documentation.</p>
+					<p><strong>Associate Consultant / SDE-3 (Capgemini India Pvt. Ltd.)</strong><span class="experience-date">Apr 2026 - Current</span><br>Senior Developer – Led Spring Boot API design and Angular integration, reviewed team code, and optimized backend performance.</p><br>
+					<p><strong>Sr. Analyst / SDE-2 (Capgemini India Pvt. Ltd.)</strong><span class="experience-date">Jan 2025 - Apr 2026</span><br>Software Developer – Developed RESTful services, collaborated on microservice migration, and improved application reliability.</p><br>
+					<p><strong>Analyst / SDE-1 (Capgemini India Pvt. Ltd.)</strong><span class="experience-date">July 2023 - Dec 2024</span><br>Java Developer – Built backend modules, supported database integration, and contributed to Angular UI enhancements.</p><br>
+					<p><strong>Intern (Capgemini India Pvt. Ltd.)</strong><span class="experience-date">Jan 2023 - Jun 2023</span><br>Developer Intern – Assisted with Spring Boot application development, frontend bug fixes, and project documentation.</p><br>
 			</div>
 		</div>
-		<div (click)="toggleExpand('stack')" class="stat-item" [class.expanded]="expanded['stack']">
+
+		<div (click)="toggleExpand('experience')" class="stat-item" [class.expanded]="expanded['experience']">
 			<strong>Primary Stack</strong>
-			<span>Java, Spring Boot, Angular</span>
-			<div *ngIf="expanded['stack']" class="expanded-content">
-				<p>Backend: Java 21, Spring Boot, Hibernate, PostgreSQL</p>
-				<p>Frontend: Angular 21, TypeScript, RxJS, Bootstrap</p>
-				<p>Tools: Git, Docker, Jenkins, Postman</p>
+			<span>Java, Spring Boot, Spring Security, REST APIs</span>
+			<div *ngIf="expanded['experience']" class="expanded-content">
+				<p>Backend: Java 21, Spring Boot, Spring MVC, Hibernate, PostgreSQL</p>
+				<p>Cloud & DevOps: Docker, Kubernetes, AWS, Maven</p>
+				<p>Frontend: Angular, TypeScript, RxJS, responsive interfaces</p>
 			</div>
 		</div>
-		<div (click)="toggleExpand('focus')" class="stat-item" [class.expanded]="expanded['focus']">
+
+		<div (click)="toggleExpand('experience')" class="stat-item" [class.expanded]="expanded['experience']">
 			<strong>Focus Areas</strong>
-			<span>REST APIs, frontend performance, responsive UI</span>
-			<div *ngIf="expanded['focus']" class="expanded-content">
-				<p>API Design: RESTful services, security, documentation</p>
-				<p>Performance: Lazy loading, caching, optimization</p>
-				<p>UI/UX: Responsive design, accessibility, user experience</p>
+			<span>Backend architecture, APIs, scalability, reliability</span>
+			<div *ngIf="expanded['experience']" class="expanded-content">
+				<p>System Design: microservices, modular architecture, reusable services</p>
+				<p>Performance: caching, optimization, service reliability</p>
+				<p>Security: authentication, authorization, secure API design</p>
 			</div>
 		</div>
 	</div>
